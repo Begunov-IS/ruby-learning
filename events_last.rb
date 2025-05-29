@@ -33,19 +33,21 @@ class Event
     attr_accessor :name, :date, :place, :seats_num, :participants
 
     def initialize (name, date, place, seats_num, participants=[])
+        validate_event
+
         @name = name
         @date = date
         @place = place
         @seats_num = seats_num
         @participants = participants
-        
+
         self.class.all << self
-        validate_event
     end
 
     def validate_event
         puts "Wrong number of seats!" if @seats_num < 0
         puts "Wrong event date!" if Date.parse(@date) <= Date.today
+        raise "ValidationError"
     end
 
     def add_participant(participant)
