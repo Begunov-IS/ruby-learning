@@ -1,0 +1,35 @@
+{
+  "items": [
+    {
+      "type": "film",
+      "title": "Леон1",
+      "year": 1994,
+      "director": "Люк Бессон1",
+      "price": 990,
+      "quantity": 4
+    },
+    {
+      "type": "film",
+      "title": "Леон2",
+      "year": 1995,
+      "director": "Люк Бессон2",
+      "price": 390,
+      "quantity": 1
+    },
+    {
+      "type": "book",
+      "title": "Леон3",
+      "author": "Люк Бессон3",
+      "price": 1500,
+      "quantity": 8
+    },
+    {
+      "type": "film",
+      "title": "my_film",
+      "year": 1989,
+      "director": "Ivan",
+      "price": 999,
+      "quantity": 0
+    }
+  ]
+}
